@@ -4,14 +4,62 @@
 
 html {
  background-color: #fff;
+ font-family: 'Rubik', helvetica, arial, sans-serif;
+ line-height: 1.6;
+ font-size: 62.5%;
 }
 
 body {
+ font-size: 15px;
  color: #72797e;
  margin: 0;
  padding: 0;
 }
 
+/*==============================
+  TYPOGRAPHY
+============================== */
+h1, h2, h3, h4, h5, h6,
+.alpha, .beta , .gamma, .delta, .epsilon, .zeta{
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  font-weight: normal;
+}
+h1, .alpha{
+  font-size: 4.8em;
+  line-height: 1.2;
+  color: #192127;
+}
+h2, .beta{
+  font-size: 3.6em;
+  line-height: 1.2;
+  color: #192127;
+}
+h3, .gamma{
+  font-size: 2.8em;
+  line-height: 1.2;
+  color: #192127;
+}
+h4, .delta{
+  font-size: 1.3em;
+  line-height: 1.5;
+  color: #72797e;
+  text-transform: uppercase;
+}
+h5, .epsilon{
+  font-size: 1.4em;
+  line-height: 1.4;
+  color: #72797e;
+}
+h6, .zeta{
+  font-size: 1.2em;
+  line-height: 1.4;
+  color: #72797e;
+}
+
+button{
+  white-space: nowrap;
+}
 /*  Global
  ------------------------------ */
 
@@ -25,43 +73,101 @@ padding: 0 1em;
   list-style-type: none;
   padding: 0;
 }
+.bare-list a{
+  text-decoration: none;
+}
 
 /* Header */
 .banner {
  background: #afbac4 url(../images/mountain-lake.jpg) no-repeat 50% 50% / cover;
  color: #fff;
- padding: 0 0 5rem 0;
- margin: 0 0 5rem 0;
-
+ padding: 0 0 4.8rem 0;
+ margin: 0 0 4.8rem 0;
 }
 
 .banner a {
  color: #fff;
 }
 
+
 .global-header {
- padding: 0 0 5rem 0;
+ padding: 0 0 4.8rem 0;
  border-bottom: 1px solid #afbac4;
 }
 
 .masthead {
-
+  padding: 0 0 4.8rem;
+  margin: 0 0 4.8rem;
+/* text-align: center; */
 }
 
+.masthead h1{
+  color: #fff;
+  text-align: center;
+}
 
-/* Footer */
+/*==============================
+  Footer
+============================== */
 .global-footer {
  background-color: #192127;
  color: #bbc1c6;
- padding: 5rem 0;
+ padding: 4.8rem 0 4.8rem;
 }
 
 .global-footer a {
  color: inherit;
 }
 
+/* Logo
+------------------------------ */
+
+.logo a{
+ text-decoration: none;
+}
+.logo span{
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #192127;
+  white-space: nowrap;
+}
+.logo em{
+  color: #2c9cf2;
+  font-style: normal;
+}
+.global-footer .logo span,
+.banner .logo span,
+.banner .logo em
+{
+  color: #fff;
+}
+/* Mi codigo*/
+/* .global-footer > .content-wrapper li:first-child a{
+  /* text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
+} */
+/* .global-footer > .content-wrapper span{
+  color: #2c9cf2;
+} */
+
+/*==============================
+  CARD
+============================== */
 .card{
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.14);
-  margin: 0 2rem 2rem 0;
+  margin: 0 1.6rem 1.6rem 0;
   border-radius: 3px;
+
 }
+.card__intro{
+  padding: 1.6em;
+}
+.card__title{
+  font-size: 1.6em;
+}
+.card-footer-buttoms{
+  white-space: nowrap;
+}
+/* CARD
+------------------------------ */
